@@ -1,2 +1,4 @@
-# todoy
-Just another one todo app
+# Todoy
+
+Just another one todo application.
+
