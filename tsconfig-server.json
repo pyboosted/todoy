@@ -1,0 +1,25 @@
+{
+  "version": "2.0.3",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist/server",
+    "sourceMap": true,
+    "inlineSources": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "types": ["node", "typeix"]
+  },
+  "include": [
+    "src/server/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

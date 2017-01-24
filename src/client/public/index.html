@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todoy - Just another todo application</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <base href="/">
+    <style>
+    html {
+      width: 100%; height: 100%;
+    }
+    body {
+      position: absolute; width: 100%; height: 100%;
+    }
+    html, body {
+      padding: 0px; margin: 0px;
+    }
+
+    .app-loading {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: opacity 0.2s ease-in;
+      background-color: black;
+    }
+
+    body.--complete .app-loading {
+      opacity: 0;
+      pointer-events: none;
+    }
+    body.--hide .app-loading {
+      display: none;
+    }
+    
+    .app-loading-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150px; height: 150px;
+      margin-top: -75px; margin-left: -75px;      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    </style>
+  </head>
+  <body>
+    <sbp-app></sbp-app>
+    <div class="app-loading">
+      <div class="app-loading-logo"></div>
+    </div>
+  </body>
+</html>
